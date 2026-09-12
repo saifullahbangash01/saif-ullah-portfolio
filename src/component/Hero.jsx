@@ -70,7 +70,7 @@ const HeroSection = () => {
             Hi, I'm{" "}
           </span>
           <span className="text-[#D9A93E] dark:text-[#F7D26B] block sm:inline whitespace-normal sm:whitespace-nowrap">
-            Saif_ullah Bangash
+            Saif ullah Bangash
           </span>
 
           <span className="font-serif italic text-gray-400 dark:text-gray-500 text-2xl sm:text-3xl md:text-5xl xl:text-5xl font-normal block mt-2 sm:mt-8">

@@ -45,11 +45,11 @@ export const projects = [
 const homeFaqData = [
   {
     q: "Do you build with React or WordPress?",
-    a: "Both — the choice depends on the project. React suits custom, high-performance builds; WordPress suits content-driven sites that need easy day-to-day editing.",
+    a: "Both the choice depends on the project. React suits custom, high-performance builds; WordPress suits content-driven sites that need easy day-to-day editing.",
   },
   {
     q: "Is SEO included in every website build?",
-    a: "Every site is built with on-page SEO fundamentals in place from the start — clean structure, metadata, and performance — with deeper technical SEO available as an add-on.",
+    a: "Every site is built with on-page SEO fundamentals in place from the start clean structure, metadata, and performance,  with deeper technical SEO available as an add-on.",
   },
   {
     q: "How long does a typical project take?",
@@ -57,7 +57,7 @@ const homeFaqData = [
   },
   {
     q: "Can you improve an existing website instead of rebuilding it?",
-    a: "Yes — audits and fixes for speed, SEO, and WordPress issues on existing sites are just as common as new builds.",
+    a: "Yes,  audits and fixes for speed, SEO, and WordPress issues on existing sites are just as common as new builds.",
   },
   {
     q: "Do you offer support after the site goes live?",
