@@ -19,6 +19,7 @@ import {
   FaRocket,
   FaArrowRight,
   FaChevronDown,
+  FaWhatsapp
 } from "react-icons/fa";
 
 import { SiGoogleanalytics } from "react-icons/si";
@@ -106,10 +107,13 @@ const HeroSection = () => {
           </Link>
 
           <Link
-            to="/resume"
-            className="flex-1 sm:flex-none px-4 sm:px-8 py-3 sm:py-4 border-2 border-gray-100 dark:border-white/10 text-[#2F4066] dark:text-white text-center text-xs sm:text-base font-bold rounded-xl md:rounded-2xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all whitespace-nowrap"
-          >
-            View CV
+           to="https://wa.me/923326767615"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 border-2 border-gray-100 dark:border-white/10 text-[#2F4066] dark:text-white text-center text-xs sm:text-base font-bold rounded-xl md:rounded-2xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all whitespace-nowrap"
+>
+            <FaWhatsapp className="text-xl text-[#25D366]" />
+            <span>WhatsApp</span>
           </Link>
         </Motion.div>
 
