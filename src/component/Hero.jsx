@@ -194,7 +194,7 @@ const HeroSection = () => {
             ].map((item, idx) => (
               <Link
                 key={idx}
-                href={item.link}
+                to={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-12 sm:h-12 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:text-[#1A1300] hover:bg-[#F7D26B] transition-all shadow-md text-sm sm:text-base"
@@ -431,7 +431,6 @@ const HowWeWork = () => {
   );
 };
 
-
 const TechStack = () => {
   return (
     <section className="relative w-full bg-[#0F172A] py-16 px-4 sm:px-6 md:px-12 lg:px-20 border-y border-[#F7D26B]/20 transition-colors duration-500">
@@ -441,7 +440,9 @@ const TechStack = () => {
           Technology Stack
         </h2>
         <p className="text-gray-400 max-w-2xl text-sm sm:text-base leading-relaxed">
-          Modern frameworks, performance optimization tools, and robust web standards I use to build fast, scalable, and search-friendly web applications.
+          Modern frameworks, performance optimization tools, and robust web
+          standards I use to build fast, scalable, and search-friendly web
+          applications.
         </p>
       </div>
 
@@ -464,7 +465,6 @@ const TechStack = () => {
     </section>
   );
 };
-
 
 /* ------------------------------------------------------------------ */
 /*  PAGE — Hero + all sections, exported as default "Hero"            */
