@@ -1130,63 +1130,7 @@ function DevelopmentProcess() {
     </section>
   );
 }
-
-/* =========================================================
-   16. FEATURED REACT PROJECTS
-   (no fabricated projects — placeholder slots for real work)
-   ========================================================= */
-function ReactProjects() {
-  const placeholders = [1, 2, 3];
-  return (
-    <section
-      id="rjs-projects"
-      className="py-24 md:py-32 text-white relative overflow-hidden"
-      style={{ background: "var(--dark)" }}
-    >
-      <div className="absolute inset-0 rjs-grid-noise opacity-20" />
-      <div className="relative max-w-7xl mx-auto px-6 md:px-10">
-        <Reveal className="max-w-2xl">
-          <Eyebrow dark>// featured react projects</Eyebrow>
-          <h2 className="font-display text-3xl md:text-4xl font-semibold mt-5 tracking-tight">
-            Featured React Projects
-          </h2>
-          <p className="text-slate-300 mt-4 text-lg">
-            This section is set up for real React work only — swap each slot for
-            an actual project, its screenshot, stack and live links.
-          </p>
-        </Reveal>
-        <div className="grid md:grid-cols-3 gap-6 mt-14">
-          {placeholders.map((p) => (
-            <Reveal key={p}>
-              <div
-                className="rjs-card-dark p-7 h-full flex flex-col items-center text-center justify-center gap-3 min-h-70"
-                style={{ borderStyle: "dashed" }}
-              >
-                <Code2 size={26} color="#475569" />
-                <p className="font-mono text-sm text-slate-500">
-                  project slot {p}
-                </p>
-                <p className="text-slate-500 text-xs max-w-55">
-                  Add project name, screenshot, description, stack and key
-                  features here.
-                </p>
-                <div className="flex gap-4 mt-3 font-mono text-xs text-slate-600">
-                  <span className="flex items-center gap-1">
-                    <Github size={13} /> GitHub
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ExternalLink size={13} /> Live Demo
-                  </span>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
+ 
 /* =========================================================
    17. WHY CHOOSE MY REACT DEVELOPMENT SERVICE
    ========================================================= */
@@ -1247,8 +1191,7 @@ export default function ReactDevelopment() {
       <AuthenticationSection />
       <TechStack />
       <ProjectTypes />
-      <DevelopmentProcess />
-      <ReactProjects />
+      <DevelopmentProcess /> 
       <WhyChooseMe />
      <FAQs 
         data={FAQ_ITEMS} 

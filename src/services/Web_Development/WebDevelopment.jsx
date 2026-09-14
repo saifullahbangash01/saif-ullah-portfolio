@@ -941,128 +941,6 @@ function UseCases() {
   );
 }
 
-/* =========================================================
-   12. FEATURED CUSTOM PROJECTS
-   (no fabricated projects — placeholder slots for real work)
-   ========================================================= */
-function CustomProjects() {
-  const projects = [
-    {
-      id: 1,
-      title: "The Vapor Store",
-      description:
-        "High-performance e-commerce platform with age verification, integrated newsletter popups, and SEO optimization.",
-      image: "assets/img/vapes-img.jfif",
-      stack: ["PHP", "Bootstrap 5", "JavaScript", "HTML5/CSS3"],
-      liveLink: "https://thevapor.co.uk/",
-    },
-    {
-      id: 2,
-      title: "Smoknic E-Cigarettes",
-      description:
-        "Custom online vape supply store optimized for fast loading speeds, clean UI layout, and smooth checkout flow.",
-      image: "assets/img/smoknic-vape-web-design-190.png",
-      stack: ["PHP", "Bootstrap 5", "JavaScript", "HTML5/CSS3"],
-      liveLink: "https://www.smoknic.co.uk/",
-    },
-    {
-      id: 3,
-      title: "iSafe Gadgets",
-      description:
-        "Modern tech accessory web store featuring high-conversion product showcases and responsive design across all devices.",
-      image: "assets/img/isafegadgets-img.jfif",
-      stack: ["PHP", "Bootstrap 5", "JavaScript", "HTML5/CSS3"],
-      liveLink: "https://isafegadgets.co.uk/",
-    },
-  ];
-
-  return (
-    <section
-      id="cwd-projects"
-      className="py-24 md:py-32 bg-(--dark) text-white relative overflow-hidden"
-      style={{ background: "var(--dark)" }}
-    >
-      <div className="absolute inset-0 cwd-grid-noise opacity-20" />
-      <div className="relative max-w-7xl mx-auto px-6 md:px-10">
-        <Reveal className="max-w-2xl">
-          <Eyebrow >// featured custom projects</Eyebrow>
-          <h2 className="font-display text-3xl md:text-4xl font-semibold mt-5 tracking-tight">
-            Featured Custom Projects
-          </h2>
-          <p className="text-slate-300 mt-4 text-lg">
-            Real custom web applications, e-commerce solutions, and tailored web
-            platforms built for speed and conversion.
-          </p>
-        </Reveal>
-
-        <div className="grid md:grid-cols-3 gap-8 mt-14">
-          {projects.map((project) => (
-            <Reveal key={project.id}>
-              <div className="cwd-card-dark rounded-xl overflow-hidden border border-slate-800 bg-slate-900/60 h-full flex flex-col justify-between hover:border-slate-700 transition-all">
-                {/* Image linked directly to website */}
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full h-48 block overflow-hidden relative group"
-                >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </a>
-
-                {/* Content Section */}
-                <div className="p-6 flex flex-col grow justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white tracking-tight">
-                      <a
-                        href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-indigo-400 transition-colors"
-                      >
-                        {project.title}
-                      </a>
-                    </h3>
-                    <p className="text-slate-400 text-sm mt-2 leading-relaxed">
-                      {project.description}
-                    </p>
-
-                    {/* Tech Stack Chips */}
-                    <div className="flex flex-wrap gap-1.5 mt-4">
-                      {project.stack.map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-2.5 py-1 text-xs font-mono rounded bg-slate-800 text-slate-300 border border-slate-700/50"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* External Link Section */}
-                  <div className="w-full flex justify-center items-center gap-4 mt-6 pt-4 border-t border-slate-800/80 font-mono text-xs">
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-[var(--gold)]"
-                    >
-                      <ExternalLink size={14} /> Live Demo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
  
 
 /* =========================================================
@@ -1081,8 +959,7 @@ export default function WebDevelopment() {
       <PerformanceSection />
       <ResponsiveSection />
       <IntegrationSection />
-      <UseCases />
-      <CustomProjects />
+      <UseCases /> 
        
         <FAQs 
         data={faqData} 
