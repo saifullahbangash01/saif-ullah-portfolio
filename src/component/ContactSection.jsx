@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"; 
+import React, { useState, useRef } from "react"; 
 import { motion, AnimatePresence } from "framer-motion"; 
 import emailjs from "@emailjs/browser"; 
 import { 
@@ -11,7 +11,7 @@ import {
 
 // EmailJS Credentials Configuration 
 const SERVICE_ID = "service_ane2vpf"; 
-const TEMPLATE_ID = "template_1nxear4"; 
+const TEMPLATE_ID = "template_r5y9nra"; 
 const PUBLIC_KEY = "M3TsBOqJVXV_77jVU"; 
 const MY_EMAIL = "saifbangash480@gmail.com"; 
 
@@ -40,11 +40,6 @@ const ContactSection = () => {
     email: "", 
     message: "", 
   }); 
-
-  // Initialize EmailJS once on mount
-  useEffect(() => { 
-    emailjs.init(PUBLIC_KEY); 
-  }, []); 
 
   const handleChange = (e) => { 
     setFormData({ ...formData, [e.target.name]: e.target.value }); 
@@ -82,11 +77,10 @@ const ContactSection = () => {
         }, 
         (error) => { 
           setLoading(false); 
-          // Browser Console (F12) check karein detailed error status dekhne ke liye
           console.error("EmailJS Full Error:", error); 
           setStatusMessage({ 
             type: "error", 
-            text: error?.text || "Failed to send. Please try again later.", 
+            text: error?.text || "Failed to send. Please check your template settings.", 
           }); 
         } 
       ); 
