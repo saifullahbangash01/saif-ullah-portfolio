@@ -830,63 +830,7 @@ function ResponsiveSection() {
   );
 }
 
-/* =========================================================
-   10. REACT UI/UX
-   ========================================================= */
-function ReactUIUX() {
-  const capabilities = [
-    { icon: Layout, label: "Modern Interfaces" },
-    { icon: Component, label: "Interactive Components" },
-    { icon: PanelsTopLeft, label: "Responsive Navigation" },
-    { icon: ClipboardList, label: "Forms" },
-    { icon: SquareStack, label: "Modals" },
-    { icon: ToggleLeft, label: "Tabs" },
-    { icon: ChevronDown, label: "Accordions" },
-    { icon: Layers, label: "Cards" },
-    { icon: LayoutDashboard, label: "Dashboards" },
-    { icon: Table2, label: "Tables" },
-    { icon: Gauge, label: "Animations" },
-    { icon: Bell, label: "Micro Interactions" },
-  ];
-  const tech = [
-    "Tailwind CSS",
-    "Bootstrap 5",
-    "CSS3",
-    "Framer Motion",
-    "React Icons",
-  ];
-  return (
-    <section className="py-24 md:py-32 bg-white border-y border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <Reveal className="max-w-2xl">
-          <Eyebrow>// ui / ux</Eyebrow>
-          <h2 className="font-display text-3xl md:text-4xl font-semibold mt-5 tracking-tight">
-            React UI/UX Development
-          </h2>
-        </Reveal>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-12">
-          {capabilities.map((c) => (
-            <Reveal key={c.label}>
-              <div className="rjs-card p-5 flex items-center gap-3 h-full">
-                <c.icon size={18} color="var(--primary)" />
-                <span className="text-sm font-medium">{c.label}</span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-        <Reveal>
-          <div className="flex flex-wrap gap-2.5 mt-8">
-            {tech.map((t) => (
-              <span key={t} className="rjs-chip">
-                {t}
-              </span>
-            ))}
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
+ 
 
 /* =========================================================
    11. AUTHENTICATION & PROTECTED ROUTES
@@ -1186,8 +1130,7 @@ export default function ReactDevelopment() {
       <StateManagement />
       <ApiIntegration />
       <PerformanceSection />
-      <ResponsiveSection />
-      <ReactUIUX />
+      <ResponsiveSection /> 
       <AuthenticationSection />
       <TechStack />
       <ProjectTypes />
