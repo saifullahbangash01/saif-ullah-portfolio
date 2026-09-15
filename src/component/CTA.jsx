@@ -39,7 +39,7 @@ const CTA = ({
         </h2>
 
         {/* Description */}
-        <p className="text-[#1A1300]/85 max-w-xl text-sm sm:text-base font-semibold leading-relaxed">
+        <p className="text-[#1A1300]/85 max-w-lg text-sm sm:text-base font-semibold leading-relaxed">
           {description}
         </p>
  
