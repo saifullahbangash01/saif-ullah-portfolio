@@ -2,11 +2,7 @@ import React from "react";
 import { Laptop, Globe, Search, ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const defaultTags = [
-  { icon: <Laptop size={15} />, label: "Web Development" },
-  { icon: <Globe size={15} />, label: "WordPress" },
-  { icon: <Search size={15} />, label: "SEO" },
-];
+ 
 
 const CTA = ({
   eyebrow = "Let's Work Together",
@@ -47,21 +43,7 @@ const CTA = ({
         <p className="text-[#1A1300]/85 max-w-xl text-sm sm:text-base font-semibold leading-relaxed">
           {description}
         </p>
-
-        {/* Tags */}
-        {tags && tags.length > 0 && (
-          <div className="flex flex-wrap items-center justify-center gap-2.5 my-2">
-            {tags.map((tag, idx) => (
-              <span
-                key={idx}
-                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#0d0620] text-white text-xs sm:text-sm font-semibold shadow-md border border-white/10 hover:scale-105 transition-transform"
-              >
-                <span className="text-[#F7D26B] shrink-0">{tag.icon}</span>
-                {tag.label}
-              </span>
-            ))}
-          </div>
-        )}
+ 
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-2 w-full sm:w-auto">
