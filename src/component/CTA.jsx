@@ -1,5 +1,5 @@
 import React from "react";
-import { Laptop, Globe, Search, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
  
@@ -8,7 +8,6 @@ const CTA = ({
   eyebrow = "Let's Work Together",
   title = "Have a website in mind?",
   description = "Whether it's a new build, a WordPress site, or SEO that needs fixing — let's talk about it.",
-  tags = defaultTags,
   buttonText = "Get In Touch",
   buttonLink = "/contact",
   whatsappNumber = "923326767615",
