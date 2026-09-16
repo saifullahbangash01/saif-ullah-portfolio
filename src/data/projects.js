@@ -293,7 +293,18 @@ const projectsData = [
   liveUrl: "https://titan-website-xi.vercel.app/",
   imageUrl: "assets/img/titan-img.png",
 },
-
+{
+  id: 12,
+  badge: "EWHamza",
+  title: "Educational Resources Website Design for EWHamza",
+  descriptions: [
+    "We designed and developed a modern educational resources website for EWHamza, providing students with easy access to notes, past papers, paper schemes, lectures, quizzes, subjects, and other board exam preparation resources.",
+    "The website features grade-based resources for 9th class, 10th class, 1st year, and 2nd year, along with AI-powered tools such as an AI Math Solver, AI Study Chat, and Study Planner. The responsive and user-friendly interface is structured to make educational content easy to discover, access, and navigate across all devices."
+  ],
+  techStack: ["React.js", "JavaScript", "CSS", "Bootstrap 5"],
+  liveUrl: "https://www.ewhamza.com/",
+  imageUrl: "assets/img/ewhamza-img.png",
+},
 
 
 
