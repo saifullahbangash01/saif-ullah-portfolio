@@ -1,12 +1,11 @@
 import React, { useState, useRef } from "react"; 
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion } from "framer-motion"; 
 import emailjs from "@emailjs/browser"; 
 import { 
   FaPhoneAlt, 
   FaEnvelope, 
   FaMapMarkerAlt, 
   FaPaperPlane, 
-  FaTimes, 
 } from "react-icons/fa"; 
 
 // EmailJS Credentials Configuration 
@@ -17,17 +16,9 @@ const MY_EMAIL = "saifbangash480@gmail.com";
 
 const ContactSection = () => { 
   const formRef = useRef(); 
-  const modalFormRef = useRef(); 
 
   const [loading, setLoading] = useState(false); 
-  const [modalLoading, setModalLoading] = useState(false); 
-  const [isModalOpen, setIsModalOpen] = useState(false); 
-
   const [statusMessage, setStatusMessage] = useState({ type: "", text: "" }); 
-  const [modalStatusMessage, setModalStatusMessage] = useState({ 
-    type: "", 
-    text: "", 
-  }); 
 
   const [formData, setFormData] = useState({ 
     name: "", 
@@ -35,18 +26,8 @@ const ContactSection = () => {
     message: "", 
   }); 
 
-  const [modalFormData, setModalFormData] = useState({ 
-    name: "", 
-    email: "", 
-    message: "", 
-  }); 
-
   const handleChange = (e) => { 
     setFormData({ ...formData, [e.target.name]: e.target.value }); 
-  }; 
-
-  const handleModalChange = (e) => { 
-    setModalFormData({ ...modalFormData, [e.target.name]: e.target.value }); 
   }; 
 
   // Main Form Submission Function 
@@ -81,47 +62,6 @@ const ContactSection = () => {
           setStatusMessage({ 
             type: "error", 
             text: error?.text || "Failed to send. Please try again later.", 
-          }); 
-        } 
-      ); 
-  }; 
-
-  // Modal Form Submission Function 
-  const handleModalSubmit = (e) => { 
-    e.preventDefault(); 
-    setModalLoading(true); 
-    setModalStatusMessage({ type: "", text: "" }); 
-
-    const templateParams = { 
-      from_name: modalFormData.name, 
-      from_email: modalFormData.email, 
-      to_email: MY_EMAIL, 
-      message: modalFormData.message, 
-    }; 
-
-    emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-      .then( 
-        (response) => { 
-          console.log("EmailJS Modal Success:", response.status, response.text);
-          setModalLoading(false); 
-          setModalStatusMessage({ 
-            type: "success", 
-            text: "Email successfully sent! I will respond shortly.", 
-          }); 
-          setModalFormData({ name: "", email: "", message: "" }); 
-
-          setTimeout(() => { 
-            setIsModalOpen(false); 
-            setModalStatusMessage({ type: "", text: "" }); 
-          }, 2000); 
-        }, 
-        (error) => { 
-          setModalLoading(false); 
-          console.error("EmailJS Modal Error:", error); 
-          setModalStatusMessage({ 
-            type: "error", 
-            text: error?.text || "Failed to send email. Please try again.", 
           }); 
         } 
       ); 
@@ -317,8 +257,6 @@ const ContactSection = () => {
           </div> 
         </div> 
       </section> 
-
-      {/* Modal section completely disabled */} 
     </div> 
   ); 
 }; 
