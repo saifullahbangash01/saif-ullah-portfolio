@@ -7,7 +7,7 @@ const Project = () => {
   return (
     <div className="bg-white dark:bg-[#0a0118] transition-colors duration-500 min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 border-b border-gray-100 dark:border-white/10 overflow-hidden">
+      <section className="relative pt-20 pb-16 md:pt-32  border-b border-gray-100 dark:border-white/10 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-[#D9A93E]/10 blur-[120px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10 text-center">
@@ -44,7 +44,7 @@ const Project = () => {
       </section>
 
       {/* Projects Grid Section */}
-      <section id="projects" className="max-w-360 mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24">
+      <section id="projects" className="max-w-360 mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
         
         <div className="mb-12 md:mb-16 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">

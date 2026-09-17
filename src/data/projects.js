@@ -305,8 +305,18 @@ const projectsData = [
   liveUrl: "https://www.ewhamza.com/",
   imageUrl: "assets/img/ewhamza-img.png",
 },
-
-
+{
+  id: 13,
+  badge: "Mobilink UK",
+  title: "Phone & Device Repair Website Design for Mobilink UK",
+  descriptions: [
+    "We designed and developed a modern and professional device repair website for Mobilink UK, providing customers with easy access to phone, laptop, tablet, MacBook, gaming console, battery replacement, diagnostics, and other repair services.",
+    "The website features device-specific repair services, same-day repair options, mail-in repair, store locations, repair booking, warranty information, customer reviews, and helpful repair guides. The responsive and user-friendly interface is structured to make services easy to discover, compare, and book across all devices."
+  ],
+  techStack: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "PHP"],
+  liveUrl: "https://www.mobilinkuk.com/",
+  imageUrl: "assets/img/mobilinkuk-img.png",
+},
 
 ];
 
