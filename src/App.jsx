@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import About from "./component/About";
 import Hero from "./component/Hero";
-import Navbar from "./component/Navbar"; 
+import Navbar from "./component/Navbar";
 import Project from "./component/Project";
 import ContactSection from "./component/ContactSection";
 import Footer from "./component/Footer";
-import { Route, Routes, useLocation } from "react-router-dom"; 
+import { Route, Routes, useLocation } from "react-router-dom";
 import WebDevelopment from "./services/Web_Development/WebDevelopment";
 import ReactDevelopment from "./services/Web_Development/ReactDevelopment";
 import WordPressService from "./services/Web_Development/WordPressService";
@@ -27,17 +27,19 @@ function App() {
     <>
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/contact" element={<ContactSection />} />
-        <Route path="/custom-web-development" element={<WebDevelopment />} />
-        <Route path="/react-development" element={<ReactDevelopment />} />
-        <Route path="/wordpress-development" element={<WordPressService />} />
-        <Route path="/seo-services" element={<SEOService />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/contact" element={<ContactSection />} />
+          <Route path="/custom-web-development" element={<WebDevelopment />} />
+          <Route path="/react-development" element={<ReactDevelopment />} />
+          <Route path="/wordpress-development" element={<WordPressService />} />
+          <Route path="/seo-services" element={<SEOService />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
