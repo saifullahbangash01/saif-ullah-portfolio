@@ -33,7 +33,7 @@ import TechTicker from "./TechTicker";
 /*  Shared small pieces                                                */
 /* ------------------------------------------------------------------ */
 const SectionEyebrow = ({ children }) => (
-  <span className="inline-block rounded-full border border-[#D9A93E]/50 bg-[#F7D26B]/10 px-4 py-1.5 text-sm font-medium text-[#F7D26B]">
+  <span className="inline-block rounded-full border border-[#805600]/40 bg-[#F7D26B]/20 px-4 py-1.5 text-sm font-semibold text-[#805600] dark:border-[#D9A93E]/50 dark:bg-white/5 dark:text-[#F7D26B]">
     {children}
   </span>
 );
@@ -244,7 +244,7 @@ const WhatWeDo = () => {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#2F4066] dark:text-white">
           Built around three core skills
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 max-w-2xl text-sm sm:text-base md:text-lg">
+        <p className="text-slate-700 dark:text-slate-300 max-w-2xl text-sm sm:text-base md:text-lg">
           Every project draws on the same foundation: solid development,
           reliable WordPress delivery, and search visibility that actually moves
           the needle.
@@ -320,7 +320,7 @@ const DigitalServices = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-4 mb-12 md:mb-16">
         <SectionEyebrow>Digital Services</SectionEyebrow>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#2F4066] dark:text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
           Everything your website needs
         </h2>
         <p className="text-gray-500 dark:text-gray-400 max-w-2xl text-sm sm:text-base md:text-lg">
@@ -393,7 +393,7 @@ const HowWeWork = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-4 mb-14 md:mb-20">
         <SectionEyebrow>How I Work</SectionEyebrow>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#2F4066] dark:text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
           A process built for clarity
         </h2>
         <p className="text-gray-500 dark:text-gray-400 max-w-2xl text-sm sm:text-base md:text-lg">
