@@ -33,7 +33,7 @@ import TechTicker from "./TechTicker";
 /*  Shared small pieces                                                */
 /* ------------------------------------------------------------------ */
 const SectionEyebrow = ({ children }) => (
-  <span className="inline-block px-4 py-1.5 rounded-full bg-[#F7D26B]/10 dark:bg-white/5 border border-[#F7D26B]/30 dark:border-white/10 text-[#8A6A16] dark:text-[#F7D26B] text-xs md:text-sm font-bold tracking-wide">
+  <span className="inline-block rounded-full border border-[#D9A93E]/50 bg-[#F7D26B]/10 px-4 py-1.5 text-sm font-medium text-[#F7D26B]">
     {children}
   </span>
 );
@@ -437,7 +437,7 @@ const HowWeWork = () => {
 
 const TechStack = () => {
   return (
-    <section className="relative w-full bg-[#0F172A] py-16 px-4 sm:px-6 md:px-12 lg:px-20 border-y border-[#F7D26B]/20 transition-colors duration-500">
+    <section className="relative w-full border-y border-slate-700 bg-[#0F172A] px-4 py-16 text-slate-200 sm:px-6 md:px-12 lg:px-20">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-4 mb-10">
         <SectionEyebrow>Tools & Technologies</SectionEyebrow>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">

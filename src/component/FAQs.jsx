@@ -14,11 +14,11 @@ const FAQs = ({
   return (
     <section
       id={sectionId}
-      className="relative w-full bg-gray-50 dark:bg-[#0d0620] px-4 sm:px-6 md:px-12 lg:px-20 py-16 md:py-24 transition-colors duration-500"
+      className="relative w-full bg-gray-50 px-4 py-16 text-slate-900 dark:bg-[#0d0620] dark:text-slate-100 sm:px-6 md:px-12 lg:px-20"
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center gap-4 mb-10 md:mb-14">
         {eyebrow && (
-          <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#D9A93E] dark:text-[#F7D26B] uppercase">
+          <span className="text-xs font-semibold tracking-widest text-[#805600] sm:text-sm">
             {eyebrow}
           </span>
         )}
