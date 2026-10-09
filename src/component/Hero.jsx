@@ -70,7 +70,7 @@ const HeroSection = () => {
           <span className="text-xl sm:text-3xl md:text-4xl xl:text-5xl">
             Hi, I'm{" "}
           </span>
-          <span className="text-[#70580A] dark:text-[#F7D26B] block sm:inline whitespace-normal sm:whitespace-nowrap">
+          <span className="text-[#2F4066] dark:text-[#F7D26B] block sm:inline whitespace-normal sm:whitespace-nowrap">
             Saif ullah Bangash
           </span>
 
@@ -162,7 +162,7 @@ const HeroSection = () => {
             transition={{ repeat: Infinity, duration: 4 }}
             className="absolute -top-3 -right-2 sm:-top-6 sm:-right-6 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 p-2.5 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl z-20"
           >
-            <p className="text-lg sm:text-3xl font-bold text-[#70580A] dark:text-[#F7D26B]">
+            <p className="text-lg sm:text-3xl font-bold text-[#2F4066] dark:text-[#F7D26B]">
               1+
             </p>
             <p className="text-[7px] sm:text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-widest font-extrabold">
@@ -176,7 +176,7 @@ const HeroSection = () => {
             transition={{ repeat: Infinity, duration: 5 }}
             className="absolute -bottom-3 -left-2 sm:-bottom-6 sm:-left-6 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 p-2.5 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl z-20"
           >
-            <p className="text-base sm:text-2xl font-bold text-[#70580A] dark:text-[#FBE3A0]">
+            <p className="text-base sm:text-2xl font-bold text-[#2F4066] dark:text-[#FBE3A0]">
               10+
             </p>
             <p className="text-[7px] sm:text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-widest font-extrabold">
