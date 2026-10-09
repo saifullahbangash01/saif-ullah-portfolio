@@ -224,9 +224,9 @@ const Footer = () => {
 
             {/* ================= QUICK LINKS ================= */}
             <div className="text-start sm:text-center">
-              <h4 className="text-lg font-bold text-[#E9EBF2] mb-6">
+              <h3 className="text-lg font-bold text-[#E9EBF2] mb-6">
                 Quick Links
-              </h4>
+              </h3>
 
               <ul className="inline-block space-y-4 text-left">
                 {quickLinks.map((item) => (
@@ -245,9 +245,9 @@ const Footer = () => {
 
             {/* ================= SERVICES ================= */}
             <div>
-              <h4 className="text-lg font-bold text-[#E9EBF2] mb-6">
+              <h3 className="text-lg font-bold text-[#E9EBF2] mb-6">
                 Services
-              </h4>
+              </h3>
 
               <ul className="inline-block space-y-4 text-center">
                 {services.map((service, index) => (
@@ -271,9 +271,9 @@ const Footer = () => {
 
             {/* ================= CONTACT ================= */}
             <div className="text-start">
-              <h4 className="text-lg font-bold text-[#E9EBF2] mb-6">
+              <h3 className="text-lg font-bold text-[#E9EBF2] mb-6">
                 Contact Me
-              </h4>
+              </h3>
 
               <div className="inline-block space-y-4 text-left">
                 {/* Email */}
@@ -308,9 +308,9 @@ const Footer = () => {
 
               {/* Social Media */}
               <div className="mt-7">
-                <h5 className="text-sm font-semibold text-[#E9EBF2] mb-4">
+                <h4 className="text-sm font-semibold text-[#E9EBF2] mb-4">
                   Follow Me
-                </h5>
+                </h4>
 
                 <div className="flex flex-wrap justify-center gap-3">
                   {socialLinks.map((social, index) => (
