@@ -207,9 +207,9 @@ const About = () => {
                     <Icon size={22} />
                   </div>
 
-                  <h4 className="text-3xl sm:text-4xl font-black text-white">
+                  <h2 className="text-3xl sm:text-4xl font-black text-white">
                     {st.value}
-                  </h4>
+                  </h2>
 
                   <p className="text-gray-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
                     {st.label}
@@ -275,9 +275,9 @@ const About = () => {
             <span className="text-[#D9A93E] text-xs font-mono font-bold tracking-widest uppercase bg-[#D9A93E]/10 px-3 py-1 rounded-full border border-[#D9A93E]/20">
               GROWTH &amp; EVOLUTION
             </span>
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0B1120] mt-3">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1120] mt-3">
               My Professional Journey
-            </h3>
+            </h2>
           </div>
 
           <div className="relative border-l-2 border-gray-200 ml-4 sm:ml-32 space-y-12">
@@ -302,9 +302,9 @@ const About = () => {
                 </span>
 
                 <div className="bg-[#F8FAFC] p-6 sm:p-8 rounded-2xl border border-gray-200/80 group-hover:border-[#D9A93E]/40 group-hover:shadow-md transition-all duration-300">
-                  <h4 className="text-xl font-bold text-[#0B1120] mb-2 group-hover:text-[#D9A93E] transition-colors">
+                  <h3 className="text-xl font-bold text-[#0B1120] mb-2 group-hover:text-[#D9A93E] transition-colors">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                     {item.desc}
                   </p>
@@ -354,9 +354,9 @@ const About = () => {
                       <Icon className="text-[#D9A93E]" size={28} />
                     </div>
 
-                    <h4 className="text-xl font-bold text-[#0B1120] mb-3">
+                    <h3 className="text-xl font-bold text-[#0B1120] mb-3">
                       {srv.title}
-                    </h4>
+                    </h3>
 
                     <p className="text-gray-600 text-sm leading-relaxed mb-6">
                       {srv.desc}
@@ -421,9 +421,9 @@ const About = () => {
               <Icon size={24} className="text-[#D9A93E]" />
             </div>
 
-            <h4 className="text-lg font-bold text-[#0B1120] mb-2">
+            <h3 className="text-lg font-bold text-[#0B1120] mb-2">
               {item.title}
-            </h4>
+            </h3>
 
             <p className="text-gray-600 text-sm leading-relaxed">
               {item.desc}
@@ -459,12 +459,12 @@ const About = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <h4 className="text-lg font-bold text-[#0B1120] mb-6 pb-3 border-b border-gray-100 flex items-center justify-between">
+                <h3 className="text-lg font-bold text-[#0B1120] mb-6 pb-3 border-b border-gray-100 flex items-center justify-between">
                   <span>{group.category}</span>
                   <span className="text-xs font-mono font-semibold text-gray-400">
                     {group.skills.length} Skills
                   </span>
-                </h4>
+                </h3>
 
                 <div className="flex flex-wrap gap-2.5">
                   {group.skills.map((skill) => (
@@ -531,9 +531,9 @@ const About = () => {
                   <div className="w-8 h-8 rounded-lg bg-[#D9A93E] text-[#0B1120] flex items-center justify-center font-extrabold text-sm mb-4">
                     0{idx + 1}
                   </div>
-                  <h4 className="text-lg font-bold text-[#0B1120] mb-2">
+                  <h3 className="text-lg font-bold text-[#0B1120] mb-2">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {item.desc}
                   </p>
@@ -578,9 +578,9 @@ const About = () => {
                 <span className="text-3xl font-mono font-black text-[#D9A93E]/40 block mb-4">
                   {step.num}
                 </span>
-                <h4 className="text-xl font-bold text-[#0B1120] mb-2">
+                <h3 className="text-xl font-bold text-[#0B1120] mb-2">
                   {step.title}
-                </h4>
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {step.desc}
                 </p>
@@ -646,9 +646,9 @@ const About = () => {
                 <span className="p-2 rounded-xl bg-[#D9A93E]/10 text-[#D9A93E]">
                   <User size={20} />
                 </span>
-                <h4 className="text-xl font-bold text-[#0B1120]">
+                <h3 className="text-xl font-bold text-[#0B1120]">
                   Quick Overview
-                </h4>
+                </h3>
               </div>
 
               <div className="space-y-4">
@@ -687,7 +687,7 @@ const About = () => {
               <span className="p-2 rounded-xl bg-[#D9A93E]/10 text-[#D9A93E]">
                 <GraduationCap size={20} />
               </span>
-              <h4 className="text-xl font-bold text-[#0B1120]">Education</h4>
+              <h3 className="text-xl font-bold text-[#0B1120]">Education</h3>
             </div>
 
             <div className="space-y-6">
