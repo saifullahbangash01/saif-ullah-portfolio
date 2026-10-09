@@ -70,11 +70,11 @@ const HeroSection = () => {
           <span className="text-xl sm:text-3xl md:text-4xl xl:text-5xl">
             Hi, I'm{" "}
           </span>
-          <span className="text-[#D9A93E] dark:text-[#F7D26B] block sm:inline whitespace-normal sm:whitespace-nowrap">
+          <span className="text-[#70580A] dark:text-[#F7D26B] block sm:inline whitespace-normal sm:whitespace-nowrap">
             Saif ullah Bangash
           </span>
 
-          <span className="font-serif italic text-gray-400 dark:text-gray-500 text-2xl sm:text-3xl md:text-5xl xl:text-5xl font-normal block mt-2 sm:mt-8">
+          <span className="font-serif italic text-gray-700 dark:text-gray-500 text-2xl sm:text-3xl md:text-5xl xl:text-5xl font-normal block mt-2 sm:mt-8">
             Web Developer & SEO Specialist
           </span>
         </Motion.h1>
@@ -150,7 +150,7 @@ const HeroSection = () => {
           {/* Main Image Container */}
           <div className="w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-112.5 bg-linear-to-b from-[#F7D26B]/15 to-white dark:from-[#F7D26B]/10 dark:to-[#0a0118] rounded-[2.5rem] md:rounded-[3rem] overflow-hidden border-4 md:border-8 border-gray-50 dark:border-white/5 shadow-2xl">
             <img
-              src="/assets/img/saif-pic.jfif"
+              src="/assets/img/saif-pic.webp"
               alt="Saifullah"
               className="w-full h-full object-cover"
             />
@@ -162,7 +162,7 @@ const HeroSection = () => {
             transition={{ repeat: Infinity, duration: 4 }}
             className="absolute -top-3 -right-2 sm:-top-6 sm:-right-6 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 p-2.5 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl z-20"
           >
-            <p className="text-lg sm:text-3xl font-bold text-[#D9A93E] dark:text-[#F7D26B]">
+            <p className="text-lg sm:text-3xl font-bold text-[#70580A] dark:text-[#F7D26B]">
               1+
             </p>
             <p className="text-[7px] sm:text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-widest font-extrabold">
@@ -176,7 +176,7 @@ const HeroSection = () => {
             transition={{ repeat: Infinity, duration: 5 }}
             className="absolute -bottom-3 -left-2 sm:-bottom-6 sm:-left-6 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 p-2.5 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl z-20"
           >
-            <p className="text-base sm:text-2xl font-bold text-[#8A6A16] dark:text-[#FBE3A0]">
+            <p className="text-base sm:text-2xl font-bold text-[#70580A] dark:text-[#FBE3A0]">
               10+
             </p>
             <p className="text-[7px] sm:text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-widest font-extrabold">
