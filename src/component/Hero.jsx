@@ -190,10 +190,12 @@ const HeroSection = () => {
               {
                 icon: <FaLinkedin />,
                 link: "https://www.linkedin.com/in/saifullahbangash/",
+                label: "Visit Saif Ullah on LinkedIn",
               },
               {
                 icon: <FaGithub />,
                 link: "https://github.com/Saifullahbangash01/",
+                label: "Visit Saif Ullah on GitHub",
               },
             ].map((item, idx) => (
               <Link
@@ -201,6 +203,7 @@ const HeroSection = () => {
                 to={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={item.label}
                 className="w-9 h-9 sm:w-12 sm:h-12 bg-white dark:bg-[#1a1033] border border-gray-100 dark:border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:text-[#1A1300] hover:bg-[#F7D26B] transition-all shadow-md text-sm sm:text-base"
               >
                 {item.icon}
