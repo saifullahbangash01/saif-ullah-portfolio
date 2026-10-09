@@ -19,7 +19,7 @@ import {
   FaRocket,
   FaArrowRight,
   FaChevronDown,
-  FaWhatsapp
+  FaWhatsapp,
 } from "react-icons/fa";
 
 import { SiGoogleanalytics } from "react-icons/si";
@@ -107,11 +107,11 @@ const HeroSection = () => {
           </Link>
 
           <Link
-           to="https://wa.me/923326767615"
+            to="https://wa.me/923326767615"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 border-2 border-gray-100 dark:border-white/10 text-[#2F4066] dark:text-white text-center text-xs sm:text-base font-bold rounded-xl md:rounded-2xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all whitespace-nowrap"
->
+          >
             <FaWhatsapp className="text-xl text-[#25D366]" />
             <span>WhatsApp</span>
           </Link>
@@ -152,7 +152,9 @@ const HeroSection = () => {
             <img
               src="/assets/img/saif-pic.webp"
               alt="Saifullah"
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
+              width="196"
+              height="98"
             />
           </div>
 
@@ -442,7 +444,7 @@ const TechStack = () => {
   return (
     <section className="relative w-full border-y border-slate-700 bg-[#0F172A] px-4 py-16 text-slate-200 sm:px-6 md:px-12 lg:px-20">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-4 mb-10">
-       <span className="inline-block rounded-full border border-[#D9A93E]/50 bg-[#F7D26B]/10 px-4 py-1.5 text-sm font-medium text-[#F7D26B]">
+        <span className="inline-block rounded-full border border-[#D9A93E]/50 bg-[#F7D26B]/10 px-4 py-1.5 text-sm font-medium text-[#F7D26B]">
           Tools & Technologies
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
