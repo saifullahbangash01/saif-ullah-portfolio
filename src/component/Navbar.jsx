@@ -245,7 +245,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="/assets/logo/logo (2).png"
+            src="/assets/logo/logo (2).webp"
             alt="Saifullah Bangash"
             style={{ width: "100%", height: "auto", objectFit: "contain" }}
           />
