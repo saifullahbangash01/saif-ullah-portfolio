@@ -109,14 +109,3 @@ Some of my selected projects include:
 - Admin Dashboards
 
 Visit my portfolio to explore more projects.
-
----
-
-## 💻 Local Setup
-
-Follow these steps to run the portfolio locally.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Saif-Bangash/saif-ullah-portfolio.git
